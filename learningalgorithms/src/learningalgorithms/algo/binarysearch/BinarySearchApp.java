@@ -9,6 +9,7 @@ public class BinarySearchApp {
 		System.out.println(binarySearchRecursion(inArray, searchElement, 0, inArray.length - 1));
 	}
 
+	//This method returns index
 	private static int binarySearchRecursion(int[] a, int x, int p, int r) {
 		if (p <= r) {
 			int q = (p + r) / 2;
