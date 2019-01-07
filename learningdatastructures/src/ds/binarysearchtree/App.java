@@ -18,7 +18,7 @@ public class App {
         bst.insert(43,"FORTY THREE");
         bst.insert(48,"FORTY EIGHT");
         bst.insert(70,"SEVENTY");
-        bst.insert(58,"SIXTY FIVE");
+        bst.insert(65,"SIXTY FIVE");
         bst.insert(75,"SEVENTY FIVE");
         bst.insert(41,"FORTY ONE");
         bst.insert(44,"FORTY FOUR");
@@ -27,7 +27,10 @@ public class App {
         System.out.println("Min value in tree = "+bst.findMinNode().toString());
         System.out.println("Max value in tree = "+bst.findMaxNode().toString());
 
-        bst.deleteNode(50);
+        int deleteKey=30;
+        bst.deleteNode(deleteKey);
+        String result = bst.isExists(deleteKey)?"Exists":"Not found";
+        System.out.println("Key "+deleteKey+" "+result);
     }
 
 }

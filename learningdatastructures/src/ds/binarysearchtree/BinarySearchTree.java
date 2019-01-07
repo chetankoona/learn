@@ -4,6 +4,22 @@ public class BinarySearchTree {
 
     private Node root;
 
+    public Boolean isExists(int key) {
+        Node current = root;
+        while (current != null) {
+            if (key == current.key) {
+                return true;
+            } else {
+                if (key < current.key) {
+                    current = current.leftChild;
+                } else {
+                    current = current.rightChild;
+                }
+            }
+        }
+        return false;
+    }
+
     public void insert(int key, String value) {
         Node newNode = new Node(key, value);
         if (root == null) {
@@ -55,17 +71,20 @@ public class BinarySearchTree {
 
     public void deleteNode(int key) {
         Node current = root;
-        Node parent = null;
+        Node parent = root;
+        boolean isLeftChild = false;
         while (current != null) {
             if (current.key == key) {
-                deleteLogic(current, parent);
+                deleteLogic(current, parent, isLeftChild);
                 System.out.println("Key " + key + " deleted from tree.");
                 return;
             } else {
                 parent = current;
                 if (key < current.key) {
+                    isLeftChild = true;
                     current = current.leftChild;
                 } else {
+                    isLeftChild = false;
                     current = current.rightChild;
                 }
             }
@@ -73,48 +92,54 @@ public class BinarySearchTree {
         System.out.println("Key " + key + " does not exist in tree.");
     }
 
-    private void deleteLogic(Node deleteNode, Node parent) {
+    private void deleteLogic(Node nodeToDelete, Node parent, boolean isLeftChild) {
         /*
         Three steps
         1. removing the leaf node, node with no children.
         2. removing node with one children.
         3. removing node with two children.
         */
-        if (deleteNode.leftChild == null || deleteNode.rightChild == null) {
+        if (nodeToDelete.leftChild == null || nodeToDelete.rightChild == null) {
             Node joinNode = null;
-            if (deleteNode.leftChild != null) {
-                joinNode = deleteNode.leftChild;
-            } else if (deleteNode.rightChild != null) {
-                joinNode = deleteNode.rightChild;
+            if (nodeToDelete.leftChild != null) {
+                joinNode = nodeToDelete.leftChild;
+            } else if (nodeToDelete.rightChild != null) {
+                joinNode = nodeToDelete.rightChild;
             }
-            if (parent.leftChild != null && deleteNode.key == parent.leftChild.key) {
+            if (nodeToDelete == root) {
+                root = joinNode;
+            } else if (isLeftChild) {
                 parent.leftChild = joinNode;
             } else {
                 parent.rightChild = joinNode;
             }
         } else {
-            Node jumpNode = detachAndGetJumpNode(deleteNode.rightChild, deleteNode);
-            if (parent.leftChild != null && deleteNode.key == parent.leftChild.key) {
-                parent.leftChild = jumpNode;
+            Node successor = detachAndGetSuccessorNode(nodeToDelete.rightChild, nodeToDelete);
+            if (nodeToDelete == root) {
+                root = successor;
+            } else if (isLeftChild) {
+                parent.leftChild = successor;
             } else {
-                parent.rightChild = jumpNode;
+                parent.rightChild = successor;
             }
-            jumpNode.rightChild = deleteNode.rightChild;
-            jumpNode.leftChild = deleteNode.leftChild;
+            successor.rightChild = nodeToDelete.rightChild;
+            successor.leftChild = nodeToDelete.leftChild;
         }
     }
 
-    public Node detachAndGetJumpNode(Node fromNode, Node parent) {
+    private Node detachAndGetSuccessorNode(Node fromNode, Node successorParent) {
         Node current = fromNode;
-        Node jumpNode = parent;
+        Node successor = successorParent;
 
         while (current != null) {
-            parent = jumpNode;
-            jumpNode = current;
+            successorParent = successor;
+            successor = current;
             current = current.leftChild;
         }
-        parent.leftChild = null;
-        return jumpNode;
+        if (successor != fromNode) {
+            successorParent.leftChild = successor.rightChild;
+        }
+        return successor;
     }
 
 }
