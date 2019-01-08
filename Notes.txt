@@ -1,0 +1,29 @@
+Eclipse Memory Analyzer - Analyzes the heap dump.
+Java Visual VM
+
+Wallmart Labs
+Datastructures & Algorithms
+Design Patterns
+Java full course from Udemy (Collections, Threads, Streams)
+Designing applications like Design Uber, parking system (search in YouTube)
+Spring Boot
+SOLR search engine with Zookeeper
+Python & Django
+GIT
+VUE JS
+SSL certificates (study getHttpClient in ingestion while talking to SOLR)
+	http://www.steves-internet-guide.com/ssl-certificates-explained/
+CS Fundamentals interview questions.
+
+Quick Silver
+SOLR Search engine & Zookeeper
+Spring boot rest api's
+Spring boot ingestion application
+Rest api testing using jmeter
+Shell scripting
+SSL certificates
+Python & Django
+VUE JS
+MYSQL
+GIT
+Encryption, Decryption, Tokenization.
