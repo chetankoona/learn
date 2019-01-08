@@ -5,6 +5,7 @@ Wallmart Labs
 Datastructures & Algorithms
 Design Patterns
 Java full course from Udemy (Collections, Threads, Streams)
+Memory and performance
 Designing applications like Design Uber, parking system (search in YouTube)
 Spring Boot
 SOLR search engine with Zookeeper
