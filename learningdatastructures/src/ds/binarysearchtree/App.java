@@ -28,9 +28,11 @@ public class App {
         System.out.println("Max value in tree = "+bst.findMaxNode().toString());
 
         int deleteKey=30;
-        bst.deleteNode(deleteKey);
+        //bst.deleteNode(deleteKey);
         String result = bst.isExists(deleteKey)?"Exists":"Not found";
         System.out.println("Key "+deleteKey+" "+result);
+
+        bst.printBinaryTreeStructure();
     }
 
 }

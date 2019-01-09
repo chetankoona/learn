@@ -142,4 +142,10 @@ public class BinarySearchTree {
         return successor;
     }
 
+    public void printBinaryTreeStructure(){
+        System.out.println("......................................................");
+        System.out.println(root.key);
+        System.out.println("......................................................");
+    }
+
 }
