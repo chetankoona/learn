@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/designpatterns/designpatterns.iml" filepath="$PROJECT_DIR$/designpatterns/designpatterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/geeksforgeeks/geeksforgeeks.iml" filepath="$PROJECT_DIR$/geeksforgeeks/geeksforgeeks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaconcurrency/javaconcurrency.iml" filepath="$PROJECT_DIR$/javaconcurrency/javaconcurrency.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learningalgorithms/learningalgorithms.iml" filepath="$PROJECT_DIR$/learningalgorithms/learningalgorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learningdatastructures/learningdatastructures.iml" filepath="$PROJECT_DIR$/learningdatastructures/learningdatastructures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learningforinterview/learningforinterview.iml" filepath="$PROJECT_DIR$/learningforinterview/learningforinterview.iml" />
+    </modules>
+  </component>
+</project>
