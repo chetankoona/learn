@@ -22,9 +22,7 @@ public class ProblemOne {
                 if (inputArray[k] + 1 == inputArray[k + 1]) {
                     liveConsecutiveCount++;
                 } else {
-                    if (liveConsecutiveCount > highConsecutiveCount) {
-                        highConsecutiveCount = liveConsecutiveCount;
-                    }
+                    if (liveConsecutiveCount > highConsecutiveCount) highConsecutiveCount = liveConsecutiveCount;
                     liveConsecutiveCount = 1;
                 }
             }
