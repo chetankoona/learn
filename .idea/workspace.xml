@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bd45bdd0-318f-4d28-9dad-4a9659781b89" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intellij_shortkeys" beforeDir="false" afterPath="$PROJECT_DIR$/Intellij_shortkeys" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaconcurrency/src/concurrency/AnotherThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/javaconcurrency/src/concurrency/AnotherThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaconcurrency/src/concurrency/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/javaconcurrency/src/concurrency/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaconcurrency/src/concurrency/MyRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/javaconcurrency/src/concurrency/MyRunnable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaconcurrency/src/multiplethreads/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/javaconcurrency/src/multiplethreads/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geeksforgeeks/src/gfg/ds/array/ProblemOne.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,51 +24,71 @@
     <session id="-1799168920">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.22" value="3" />
           <entry key="project.open.time.23" value="2" />
           <entry key="project.open.time.24" value="4" />
-          <entry key="project.open.time.26" value="2" />
+          <entry key="project.open.time.26" value="3" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.41" value="1" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Intellij_shortkeys" value="1" />
-          <entry key="java" value="111" />
+          <entry key="java" value="114" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="111" />
+          <entry key="JAVA" value="114" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="dummy" value="29" />
           <entry key="java" value="11296" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="11296" />
+          <entry key="PLAIN_TEXT" value="29" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/geeksforgeeks/src/gfg/SampleFIle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/geeksforgeeks/src/gfg/ds/array/StockMaxProfit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="43" column="35" lean-forward="true" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+            <state relative-caret-position="108">
+              <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/geeksforgeeks/src/gfg/ds/array/LongestConsecutiveSubSequence.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="12" column="46" lean-forward="true" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -111,7 +127,6 @@
         <option value="$PROJECT_DIR$/learningdatastructures/src/ds/binarysearchtree/BinarySearchTree.java" />
         <option value="$PROJECT_DIR$/learningdatastructures/src/ds/binarysearchtree/App.java" />
         <option value="$PROJECT_DIR$/geeksforgeeks/src/gfg/ds/array/RotateAlgo.java" />
-        <option value="$PROJECT_DIR$/geeksforgeeks/src/gfg/ds/array/ProblemOne.java" />
         <option value="$PROJECT_DIR$/designpatterns/src/dp/builder/Director.java" />
         <option value="$PROJECT_DIR$/designpatterns/src/dp/simplefactory/PC.java" />
         <option value="$PROJECT_DIR$/designpatterns/src/dp/simplefactory/Server.java" />
@@ -132,6 +147,8 @@
         <option value="$PROJECT_DIR$/javaconcurrency/src/concurrency/AnotherThread.java" />
         <option value="$PROJECT_DIR$/javaconcurrency/src/multiplethreads/Main.java" />
         <option value="$PROJECT_DIR$/geeksforgeeks/src/gfg/ds/array/StockMaxProfit.java" />
+        <option value="$PROJECT_DIR$/geeksforgeeks/src/gfg/ds/array/ProblemOne.java" />
+        <option value="$PROJECT_DIR$/geeksforgeeks/src/gfg/ds/array/LongestConsecutiveSubSequence.java" />
       </list>
     </option>
   </component>
@@ -150,7 +167,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -180,10 +196,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549391024728" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549550724629" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -202,25 +219,12 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.StockMaxProfit">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dp.factorymethod.Client" />
-      <module name="designpatterns" />
+    <configuration name="LongestConsecutiveSubSequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gfg.ds.array.LongestConsecutiveSubSequence" />
+      <module name="geeksforgeeks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dp.factorymethod.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Director (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dp.simplefactory.Director" />
-      <module name="designpatterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dp.simplefactory.*" />
+          <option name="PATTERN" value="gfg.ds.array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -254,6 +258,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SampleFIle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gfg.SampleFIle" />
+      <module name="geeksforgeeks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gfg.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StockMaxProfit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gfg.ds.array.StockMaxProfit" />
       <module name="geeksforgeeks" />
@@ -268,19 +285,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Director (1)" />
-      <item itemvalue="Application.Client" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.StockMaxProfit" />
+      <item itemvalue="Application.LongestConsecutiveSubSequence" />
+      <item itemvalue="Application.SampleFIle" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.StockMaxProfit" />
+        <item itemvalue="Application.SampleFIle" />
+        <item itemvalue="Application.LongestConsecutiveSubSequence" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Client" />
-        <item itemvalue="Application.Director (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -301,7 +318,7 @@
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.29960158" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30438247" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -363,7 +380,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/learningalgorithms/src/learningalgorithms/algo/mergesort/MergeSortApp.java" />
     <entry file="file://$PROJECT_DIR$/learningalgorithms/src/learningalgorithms/algo/quicksort/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -393,13 +409,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geeksforgeeks/src/gfg/ds/array/ProblemOne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="53" lean-forward="true" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -693,10 +702,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/geeksforgeeks/src/gfg/ds/array/LongestConsecutiveSubSequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="46" lean-forward="true" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geeksforgeeks/src/gfg/SampleFIle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/geeksforgeeks/src/gfg/ds/array/StockMaxProfit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="43" column="35" lean-forward="true" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+        <state relative-caret-position="108">
+          <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
         </state>
       </provider>
     </entry>

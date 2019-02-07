@@ -3,7 +3,7 @@ package gfg.ds.array;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ProblemOne {
+public class LongestConsecutiveSubSequence {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
