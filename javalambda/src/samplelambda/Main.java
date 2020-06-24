@@ -1,5 +1,10 @@
 package samplelambda;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 /*        new Thread(() -> {
@@ -9,6 +14,19 @@ public class Main {
 
         Employee emp1 = new Employee("Chetan", 31);
         Employee emp2 = new Employee("Nithesh", 30);
+
+        List<Employee> empList = new ArrayList<>();
+        empList.add(emp1);
+        empList.add(emp2);
+
+/*        Collections.sort(empList, new Comparator<Employee>() {
+            @Override
+            public int compare(Employee o1, Employee o2) {
+                return o1.getName().compareTo(o2.getName());
+            }
+        });*/
+        Collections.sort(empList, (o1,o2) -> o1.getName().compareTo(o2.getName()));
+        empList.forEach(e -> System.out.println(e.getName()));
 
 /*        UpperAndConcat uc = new UpperAndConcat() {
             @Override

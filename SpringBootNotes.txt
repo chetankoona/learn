@@ -1,0 +1,11 @@
+Spring constructor injection
+Remote debugging
+gradle bootRun - JAVA_OPTS what is this.
+shut down hook ?
+Spring Devtools
+spring-boot-actuator
+java -jar abc.jar --debug
+lazy initialization of bean
+customozing banner (useful for standalone app)
+SpringApplicationBuilder (not clear on this concept)
+What is application context ???

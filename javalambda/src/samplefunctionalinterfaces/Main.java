@@ -30,6 +30,7 @@ public class Main {
 
         printEmployeesByAge(employees, "Employees above 30 age", employee -> employee.getAge() > 30);
         System.out.println("\n");
+        //We could use anonymous class here, but it is convinient to use lambda for java.util.Function package
         printEmployeesByAge(employees, "Employees 30 or younger age", employee -> employee.getAge() <= 30);
         System.out.println("\n");
 
@@ -55,7 +56,7 @@ public class Main {
             System.out.println("Last Name of " + name + " is " + lastName);
         });
 
-        //Example on using Function...
+        //Example on using Function... (Instead of writing custom FunctionalInterface we can use Function<>)
         Function<Employee, String> getFirstName = employee -> {
             String name = employee.getName();
             return name.substring(0, name.indexOf(" "));
@@ -73,6 +74,8 @@ public class Main {
         Function<String,String> firstName = name -> name.substring(0,name.indexOf(" "));
         Function upperAndGetFirstName = upperCaseName.andThen(firstName);
         employees.forEach(employee -> System.out.println("Upper and then get first name = "+upperAndGetFirstName.apply(employee)));
+
+        //Checkout BiFunction
     }
 
     public static String getName(Function<Employee, String> getNameFunc, Employee employee) {
