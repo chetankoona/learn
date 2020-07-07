@@ -1,0 +1,48 @@
+Lambda introduced in Java 8.
+
+Interfaces with one method or one not implemented method (example: Runnable, Comparator),
+    these interfaces are also referred to functional interfaces.
+
+These are used in place of anonymous classes.
+Example:    Instead of creating Runnable class with run implementation | creating anonymous class of Runnable,
+            we can use lambda expression, coz Runnable is functional interface.
+
+Anonymous class does not have name(getClass.getSimpleName()).
+
+A lambda expression is not a class, anonymous instance is not created for lambda expression when code runs,
+    instead lambda is treated as nested block of code, and has a same scope as nested block. (ref: AnotherClassLambda)
+
+Any local variable we are using in lambda must be effectively final (value should be declared final or value should not change).
+
+While processing the lambda, and if lambda uses any local variable from outside lambda, this variable must be effectively final.
+
+java.util.function package contains bunch of functional interfaces, some are generic & specific type.
+    Consumer interface (foreach) - does not return anything, also check BiConsumer.
+    Predicate interface (we can chain predicates) - return boolean, also check BiPredicate.
+    Supplier interface - does not take argument
+    Function interface - takes an argument and returns. (can be used in callbacks) - check for uses.
+        Function interface can be used instead of method as instance variable.
+            Function chaining can be done, return of first function will be arg of next function.
+    BiFunction - takes 2 argumrnts
+        While doing function chaining , BiFunction should be first and then Function.
+    UnaryOperator interface extends Function - arg and return type are same.
+
+
+Bullets:
+    Functional programming in Java is not passing function but passing lambdas(implementation of functional interface).
+    Lambdas can be replaced by anonymous class, but lambdas are convinient to use and java understands it.
+
+Example use of Function interface:
+    Function<Image, Image> resizer1 = (Image image) -> { resize using algo 1 }
+    Function<Image, Image> resizer2 = (Image image) -> { resize using algo 2 }
+    public List<Image> runWhenDone(Function<Image, Image> resizer){
+        for(Image image : images){
+            resizedImages.add(resizer.apply(image));
+        }
+    }
+
+Streams introduced in Java 8.
+Important: Refer CECL project for streams and grouping.
+
+Checkout Method References.
+Checkout Map Reduce.

@@ -1,0 +1,25 @@
+Process - A unit of execution that has own memory space (heap), each instance of JVM run as process(this isnt true for all jvm implementation), when we run a java console app then we are kicking off process.
+
+Thread - A unit of execution within a process, each process can have multiple threads, every process has atleast one thread(main thread), each thread has memory i.e. thread stack, and only that thread can access that memory.
+
+Runnable - 
+
+Thread join - this is used for one thread to wait until the joined to finish. (sometimes waiting for each other is called deadlock.)
+
+Thread interference
+    Before java 5 , synchronize is used to deal with thread interference.
+    Drawbacks:
+        Threads that are blocked waiting to execute sync code, cant be interrupted, once the are blocked they are stuck there until they get lock.
+        Sync block must in one method, that means, we cannot start sync block in one method and end in another method.
+        we cannot find any info abt the lock. in the beginning of sync execution has to wait for lock no way to timeout.
+        If multiple threads are waitin to get a lock, its not first come first serve,
+    Re-entrant lock and unlock
+        this should be used with try finally.
+        lock.tryLock() , if got lock do imp thing, else do something else.
+Executor service - java.util.concurrent package
+    we need to to provide runnable or callable to service, we need not manage threads in ground level.
+    Threadpools - is a managed set of threads, which reduces the overhead of thread creation.
+ArrayBlockingQueue - thread safe array.
+
+Problem occur when using threads,
+    Deadlock

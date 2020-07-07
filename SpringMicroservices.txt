@@ -1,0 +1,26 @@
+Microservices solves following problem in Monolith,
+	Scalability
+	Modularity (independently deploying one module i.e service)
+
+Due to because of scalability, modularity issues in Monolith, we moved to MS, but MS has its own set of problems which is generic compared to specific problem in Monolith.
+
+MS - MS is complex, as told in abv point it is generic problems,
+	Patterns - Make MS work well together.
+	Technologies - Libraries and framework to solve common problems.
+	
+Difference between MS and Web service.
+
+Best practice , API should not return List<>, If return is Object , then API owner can add a new value in Object, but if API returning List<> then cannot dot this.
+
+Webclient
+Resttemplate
+
+Service discovery pattern
+Technology to implement service discovery pattern is Eureka
+Eureka also maintains heartbeats of services.
+
+Netflix are pioneers in MS, following they created and made it open source - Eureka, ribbon, hysterix, zuul.
+
+Notes:
+Lombak
+Swagger client

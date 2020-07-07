@@ -3,10 +3,7 @@ package samplefunctionalinterfaces;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.function.Function;
-import java.util.function.IntPredicate;
-import java.util.function.Predicate;
-import java.util.function.Supplier;
+import java.util.function.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,7 +19,7 @@ public class Main {
         employees.add(akash);
         employees.add(meghraj);
         employees.add(sunil);
-
+//        Consumer<Employee> consumer = emp -> {System.out.println("Employee name = "+emp.getName());};
 //        employees.forEach(employee -> {
 //            System.out.println("Employee name = "+employee.getName());
 //            System.out.println("Employee age = "+employee.getAge());
@@ -85,9 +82,13 @@ public class Main {
     public static void printEmployeesByAge(List<Employee> employees, String ageText, Predicate<Employee> ageCondition) {
         System.out.println(ageText);
         System.out.println("=================================");
-        for (Employee employee : employees) {
-            if (ageCondition.test(employee))
+        employees.forEach(employee -> {
+            if(ageCondition.test(employee))
                 System.out.println(employee.getName());
-        }
+        });
+//        for (Employee employee : employees) {
+//            if (ageCondition.test(employee))
+//                System.out.println(employee.getName());
+//        }
     }
 }
