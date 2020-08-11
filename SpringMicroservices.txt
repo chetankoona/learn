@@ -1,3 +1,8 @@
+Level 1 - Communication & Service discovery
+Level 2 - Fault tolerance & Resilience
+Level 3 - Microservice Configuration
+
+
 Microservices solves following problem in Monolith,
 	Scalability
 	Modularity (independently deploying one module i.e service)
@@ -75,6 +80,48 @@ APi marked @HystrixCommand should be in separate service class, because hystrix 
 Hystrix dashboard
 
 BulkHead pattern - separate bucket of threads for each MS - achieved using Hystrix configuration
+
+
+Microservice configuration with Spring Boot.
+Agenda:
+	Understanding microservice configuration goals.
+	Configuration features in Spring Boot.
+		Value, Configprops, Actuator, Spring profiles, Environment.
+	Spring cloud config server
+	Dynamic configuration
+	Best practices and patterns.
+
+Goals:
+	Externalised
+	Environment specific
+	Consistent
+	Version history
+	Real time management
+
+What is microservice configuration - 
+Why microservice configuration - 
+
+Example configuration:
+	Database connections
+	Credentials
+	Feature flags
+	Business logic configuration paramater
+	Scenario testing
+	Spring Boot confgiguration
+
+Externalised is achieved by uasing application.properties file, but this fiel will be bundled in jar, you can place a copy of this file in location of jar thsi will take precedence, and also we can pass key-value as cmd line argu while starting application.
+And also we can set up Environmental variable.
+
+@Value tricks:
+	providing default value
+	managing list
+	managing maps (SPEL - spring expression language)
+@ConfigurationProperties - created a bean of properties with specified prefix.
+Use actuator to expose endpoint which has ConfigProps configured, this will have all spring boot configuration , you can read through this for understanding.
+
+Notes:
+	SPEL - spring expression language
+
 
 
 
