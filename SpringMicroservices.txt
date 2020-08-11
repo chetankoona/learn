@@ -2,6 +2,7 @@ Microservices solves following problem in Monolith,
 	Scalability
 	Modularity (independently deploying one module i.e service)
 
+
 Due to because of scalability, modularity issues in Monolith, we moved to MS, but MS has its own set of problems which is generic compared to specific problem in Monolith.
 
 MS - MS is complex, as told in abv point it is generic problems,
@@ -19,8 +20,81 @@ Service discovery pattern
 Technology to implement service discovery pattern is Eureka
 Eureka also maintains heartbeats of services.
 
-Netflix are pioneers in MS, following they created and made it open source - Eureka, ribbon, hysterix, zuul.
+Netflix are one of the pioneers in MS, following they created and made it open source - Eureka, ribbon, hysterix, zuul.
 
 Notes:
 Lombak
 Swagger client
+Client side load balancer, ribbon.
+
+Fault tolerance & Resiliance,
+Agend:
+	Understand challenge with availability.
+	Making micro services resilient and fault tolerant.
+
+
+Problems with micro services,
+	One of the MS goes down, as a solution run multiple instances of that MS.
+	One of the MS is slow, one of the solution is to set timeout(this will not solve the problem fully).
+	Circuit Breaker pattern
+		Detect something is wrong
+		Take the temporary steps to avoid situtation getting worse.
+		Deactivate the "problem" component, so that it does not affect downstream components.
+When does the circuit trip,
+	Last n requests to consider for the decision
+	How many of those should fail
+	Timeout duration.
+When does the circuit get backs to normal,
+	How long after a circuit trip to try again.
+
+When circuit breaks,
+	Throw and error
+	Return a fallback "default" response
+	Return from cache.
+
+Why circuit breakers,
+	Failing fast
+	Fallback functionality
+	Automatic recovery
+Circuit break pattern, (framework Hystrix)
+	When to break circuit
+	What to do when circuit breaks
+	When to resume requests
+Hystrix
+	Opensource library, originally created by netflix
+	Implements circuit breaker pattern, so you dont have to
+	Give it the configuration params and it does the work
+	Works well with spring boot
+Adding Hystrix to SB MS,
+	add the maven dependency - spring-cloud-started-netflix-hystrix dependency
+	Add @EnableCircuitBreaker to the application class
+	Add @HystrixCommand to methods that need circuit breakers
+	Configure Hystrix behavior
+APi marked @HystrixCommand should be in separate service class, because hystrix will create proxy class.
+	From a method in a class we cannot call api's (@HystrixCommand) which are in same class (very important)
+Hystrix dashboard
+
+BulkHead pattern - separate bucket of threads for each MS - achieved using Hystrix configuration
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

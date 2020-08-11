@@ -1,0 +1,41 @@
+Kafka Theory
+Topics - similar to table in rdbms
+Partitions - Topics will have partitions
+offsets
+Brokers - 
+	Kafka cluster is composed of multiple brokers(servers).
+	Each broker is identified with its ID.
+	Each broker contains certain topic partitions. (as kafka is distributed)
+	After connecting to any broker(called a bootstrap broker), you will be connected to the entire cluster.
+	Good number to started with is 3 brokers, but big companies will have upto 100 brokers.
+Example:
+	Broker101 {TopicA partition0}
+	Broker102 {TopicA partition2}
+	Broker103 {TopicA partition1}
+	Broker101 {TopicB partition0}
+	Broker101 {TopicB partition1}
+Topic replication - similar to replicas in SOLR
+Concept of leader for a partition
+	At any time only one broker can be leader for a given partition
+	Only that leader can receive and serve data for a partition
+	The other broker will synchrinize the data
+	Therefore each partition has one leader and multiple ISR(in-sync replica)
+Producer
+	acknowledgment - 0,1,all
+	message key - producer will send key which will guarantee to send data to a specific partition(otherwise round robin). (key hashing)
+Consumers & Consumer groups
+	Consumer reading data from multiple partition
+		withing partition it will be in order, but accross partition its random.
+	Consumer grp - consumer grp is an application which can have multiple consumers, and each consumer will read from particular partition.
+Consumer offsets - consumer bookmarks till where it read in topic, if consumer grp goes down and comes up it can read from where it left.
+Delivery semantocs - Atmost once, Atleast once (idempotent consumer), Exactly once (idempotent consumer).
+Kafka broker discovery - kafka client will connect to one bootstrap broker, then it will receive meta data containing all broker info.
+Zookeeper - leader folower, broker management.
+Kafka Guarantees:
+	Messages are appended to the topic-partition in the order they are sent.
+	Consumers read messages in the order stored in a topic-partition.
+	With a replication factor of N, producers and consumers can tolerate upto N-1 brokers being down.
+	This is why a replication factor of 3 is a good idea,
+		Allows for one broker to be taken down for maintenance.
+		Allown for another broker to be taken down unexpectedly.
+	As long as the number of partitions remain constant for a topic (no new partitions), the same key will slways go to the same partition.
