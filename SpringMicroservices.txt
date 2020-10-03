@@ -2,6 +2,15 @@ Level 1 - Communication & Service discovery
 Level 2 - Fault tolerance & Resilience
 Level 3 - Microservice Configuration
 
+Level 1
+	Creating few ms's
+	Having them communicate with each other.
+	
+Spring cloud is one set of or one way of creating microservice.
+
+In microservices we achieve scaling, modularity, 
+
+What is the difference between microservices and web services.
 
 Microservices solves following problem in Monolith,
 	Scalability
@@ -81,7 +90,7 @@ Hystrix dashboard
 
 BulkHead pattern - separate bucket of threads for each MS - achieved using Hystrix configuration
 
-
+Level 3:
 Microservice configuration with Spring Boot.
 Agenda:
 	Understanding microservice configuration goals.
@@ -94,7 +103,7 @@ Agenda:
 Goals:
 	Externalised
 	Environment specific
-	Consistent
+	Consistent - consistent accross all vm's
 	Version history
 	Real time management
 
@@ -118,6 +127,16 @@ And also we can set up Environmental variable.
 	managing maps (SPEL - spring expression language)
 @ConfigurationProperties - created a bean of properties with specified prefix.
 Use actuator to expose endpoint which has ConfigProps configured, this will have all spring boot configuration , you can read through this for understanding.
+
+YAML file is convinient than properties file.
+
+Environment specific configuration using spring profiles.
+You can use profile for creating bean. (@Profile annotation)
+
+Other than using @Value & @ConfigurationProperties we can also use Environment object.
+
+Spring cloud config server.
+
 
 Notes:
 	SPEL - spring expression language

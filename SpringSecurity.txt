@@ -1,0 +1,68 @@
+Spring Security
+
+Why spring security - Application security framework
+	Login and logout functionality
+	Allow/block access to urls to logged in users
+	Allow/block access to urls to logged in users AND with certain roles
+	Fliexible and customizable
+	Handles common vulnerabilities
+		session fixation
+		clickjacking
+		Cross site request forgery
+
+What spring security can do ?
+	User name / password authentication
+	SSO / Okta / LDAP
+	App level authorization
+	Intra app authorization like OAuth
+	Microservices security using tokens, JWT
+	Method level security.
+	
+Core concepts in spring security
+	Authentication - who is this user ?
+	Authorization - Are they allowed to do this ?
+	Principal - currently logged in user
+	Granted authority
+	Roles
+	
+Filters - are applied for all requests
+
+Spring security default behavior
+	Adds mandatory authentication for urls
+	Adds login form
+	Handles login error
+	Created a user and sets a default password
+
+Configure authentication in Spring security
+AuthenticationManager - takes care of authenticating user
+If we need to configure authentication, we configure AuthenticationManager using Builder (AuthenticationManagerBuilder)
+	Get hold of AuthenticationManagerBuilder
+	Set the configuration on it.
+
+How does Spring Security authentication works,
+	DelegatingFilterProxy - delegates request to bunch of other filters, one among this bunch of filters is Authentication.
+Steps
+	Authentication filters intercepts authentication requests, creates the authentication object with the credentials and passes it to AuthenticationManager.
+	AuthenticationManager finds the right provider that can handle the authentication using the supports method, then AuthenticationManager calls authenticate method of that AuthenticationProvider and passes Authentication object.
+	AuthenticationProvider looks up the correct user in the system using the UserDetailsService.
+	UserDetailsService returns the UserDetails instance, which AuthenticationProvider verifies and authentication happens, if Authentication is successfull, then Authentication object is returned back with Principal and authorities till Authentication filters.
+	Now Authentication filters saves the Authentication obj in Thread local, there is a security context associated with current thread, Authentication obj is put into security context in Thread local obj.
+	There is one filter which manages user session, this associates user Principal with session
+	If Authentication is un successfull, then AuthenticationProvider throws Exception.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

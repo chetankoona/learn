@@ -11,6 +11,30 @@ public class StockMaxProfit {
     /**
      * Logic to get max profit if provided to buy and sel onc time...
      * Explaination = Find max difference between two numbers..
+     * time complexity = O(n)
+     */
+    private static void adviceBuyForOneTimeBuyingEfficient(int[] stockPrices, int length) {
+        System.out.println("Advice for One time buy and sell...");
+        int maxDiff = stockPrices[1] - stockPrices[0];
+        int buyIndex = 0;
+        int sellIndex = 1;
+        for (int i=2;i<length;i++){
+            if (stockPrices[i]-stockPrices[buyIndex]>maxDiff){
+                sellIndex = i;
+                maxDiff = stockPrices[i]-stockPrices[buyIndex];
+                continue;
+            }
+//            if (){
+//
+//            }
+        }
+        System.out.println("Buy stock on " + buyIndex + " day and Sell on " + sellIndex + " day, You will be making profit of = " + maxDiff+"\n");
+    }
+
+    /**
+     * Logic to get max profit if provided to buy and sel onc time...
+     * Explaination = Find max difference between two numbers..
+     * time complexity = O(n sq)
      */
     private static void adviceBuyForOneTimeBuying(int[] stockPrices, int length) {
         System.out.println("Advice for One time buy and sell...");

@@ -1,0 +1,4 @@
+https://developer.okta.com/blog/2017/06/21/what-the-heck-is-oauth
+
+OAuth is an open standard.
+OAuth works over HTTPS and authorizes devices, APIs, servers, and applications with access tokens rather than credentials.
