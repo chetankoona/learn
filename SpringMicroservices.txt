@@ -142,6 +142,47 @@ Notes:
 	SPEL - spring expression language
 
 
+============================================In28Minutes============================================
+
+Introduction to Web services
+
+Service definition
+	Request / Response format
+	Request structure
+	Response structure
+	Endpoint
+	
+Key terminology
+	Request & Response
+	Message exchange format
+		XML and JSON
+	Service provider
+	Service consumer
+	Service definition
+	Transport
+		HTTP & MQ
+
+SOAP
+	Data exchange format
+		SOAP XML Request
+		SOAP XML Response
+	Transport
+		SOAP over HTTP
+		SOAP over MQ
+	Service definition
+		WSDL - Web Service Definition Language
+			Endpoint
+			All operations
+			Request structure
+			Response structure
+
+REST - REpresentational State Transfer
+	Data exchange format
+		No restriction, JSON is popular
+	Transport
+		Only HTTP
+	Service definition
+		No standard. WADL / SWAGGER / ...
 
 
 
@@ -162,5 +203,4 @@ Notes:
 
 
 
-
-
+============================================In28Minutes============================================
