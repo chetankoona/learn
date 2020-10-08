@@ -184,6 +184,10 @@ REST - REpresentational State Transfer
 	Service definition
 		No standard. WADL / SWAGGER / ...
 
+To debug spring framework, in application.properties - logging.level.org.springframework = debug
+
+Dispatcher Servlet
+
 
 
 
