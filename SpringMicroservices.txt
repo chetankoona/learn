@@ -188,6 +188,8 @@ To debug spring framework, in application.properties - logging.level.org.springf
 
 Dispatcher Servlet
 
+Generic exception handling
+
 
 
 
