@@ -190,6 +190,41 @@ Dispatcher Servlet
 
 Generic exception handling
 
+Spring HATEOAS
+	in28minutes vide is old one, refer https://www.springboottutorial.com/spring-boot-hateoas-for-rest-services
+
+Spring Internationalization - https://www.baeldung.com/spring-boot-internationalization (this link is for html)
+refer in28Minutes videos for rest (almost same)
+
+Content negotiation - Implementing support for XML - maven dependency - jackson dataformat xml
+
+API Documentation - https://www.baeldung.com/spring-rest-openapi-documentation
+			https://springdoc.org/#Introduction
+
+API Monitoring - Spring actuator, micrometer, Prometheus, Graphana
+
+Static filtering for REST services - @JsonIgnore annotation for bean variable
+
+Dynamic filtering for REST services - create MappingJacksonValue object and set filtering.
+
+Versioning RESTful services
+	- Media type versioning - Github
+	- Custom headers versioning - Microsoft
+	- URI versioning - Twitter
+	- Request parameter versioning - Amazon
+		- Factors
+			- URI pollution
+			- Misuse of http headers
+			- Caching
+			- Requesting from Browser
+			- API documentation
+
+Securing REST api's
+
+
+
+
+
 
 
 
