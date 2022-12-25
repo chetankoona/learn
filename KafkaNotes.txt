@@ -1,0 +1,38 @@
+Section 1 - Kafka Ecosystem - The Big Picture.
+Kafka adopted Pub Sub messaging system architecture.
+typical messaging system has 3 components:
+	Message Producer
+	Message Broker
+	Message Consumer
+
+https://www.linkedin.com/pulse/kafkas-origin-story-linkedin-tanvir-ahmed
+
+Apache Kafka Ecosystem:
+	kafka Broker
+	Kafka Client API
+	Kafka Connect
+	kafka Streams
+	KSQL
+	
+Apache Kafka Core Concepts:
+	Producer
+	Consumer
+	Broker
+	Cluster
+	Topic
+	Partitions
+	Offset
+	Consumer Groups
+	
+Topic partition is the tool for scalability
+Maximum possible parallel consumer is limited by no.of partitions in the topic.
+kafka does not allow more than one consumer to read from same partition simultaneously.
+
+What is Kafka Connect ?
+	Instead of writing a Kafka client to read from DB and push to Kafka, Kafka connect is used.
+	Source >> Kafka connect (source connector) >> Kafka Broker >> Kafka connect (sink connector) >> Target
+	Source/Target : Relational DB's, Teradata, IoT Hubs, Salesforce, Twitter, Reddit, File system, cloud storage, hadoop storage, Elastic search, cassandra, MongoDB, google firebase.
+How Kafka Connect works ?
+Kafka Connect scalability
+kafka Connect Transformations
+Kafka Connect Architecture
